@@ -4,8 +4,8 @@ class AlphanumericRandom
   include Singleton
 
   BASE = [*('A'..'Z')] + [*('a'..'z')] + [*('0'..'9')]
-  HUMAN_EXCULUDE = ['1', '0', 'O', 'l', 'I']
-  HUMAN = BASE - HUMAN_EXCULUDE
+  HUMAN_EXCLUDE = ['1', '0', 'O', 'l', 'I']
+  HUMAN = BASE - HUMAN_EXCLUDE
 
   def self.generate(options = {})
     options = {
